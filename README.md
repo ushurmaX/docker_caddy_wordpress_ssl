@@ -21,3 +21,12 @@ This project is a Docker-based setup for running WordPress with automatic HTTPS 
 - caddy
 - wordpress
 - db (MariaDB)
+
+
+## ⚙️ Usage
+#### Start /  Stop /  Cleanup (⚠️ removes all data)
+
+```bash
+docker compose up -d
+docker compose down
+docker compose down -v
