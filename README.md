@@ -22,11 +22,23 @@ This project is a Docker-based setup for running WordPress with automatic HTTPS 
 - wordpress
 - db (MariaDB)
 
+## ⚙️ Environment setup
 
+Before running the project, create a `.env` file in the root directory:
+
+```bash
+MYSQL_DATABASE=wp_db
+MYSQL_USER=wp_user
+MYSQL_PASSWORD="your super secret password"
+MYSQL_ROOT_PASSWORD="your super secret password"
+```
 ## ⚙️ Usage
+
 #### Start /  Stop /  Cleanup (⚠️ removes all data)
 
 ```bash
 docker compose up -d
 docker compose down
 docker compose down -v
+```
+
